@@ -21,10 +21,10 @@ P.S. I intentionally ignore the (good!) option with a wifi smart power socket an
 
 ## Configuration
 
-- build and upload with Arduino IDE
-- specify `WIFI_SSID` and `WIFI_PASS` in `secrets.h`
-- potentially change the `HOSTNAME` in the main file
-- comment `DEBUG` to remove Serial trace and use D5 pin for pressing (should be connected to optocoupler), otherwise integrated LED is used instead.
+- Build and flash with Arduino IDE
+- Specify `WIFI_SSID` and `WIFI_PASS` in `secrets.h`
+- Potentially change the `HOSTNAME` in the main file
+- Comment `DEBUG` to remove Serial trace and use D5 pin for pressing (should be connected to optocoupler), otherwise integrated LED is used instead.
 
 ## Mikrotik script
 
@@ -34,11 +34,11 @@ If you're a happy (or unhappy) user of a Mikrotic router, you can find a sample 
 
 ## Images
 
-The board  
+The resulting device  
 <img src="design/board.jpg" alt="Board" width="300"/>
 
-The (sorry for the mess) installation  
+The installation (sorry for the mess, I promise to clean up ... one day)  
 <img src="design/messy-installation.jpg" alt="Installation (sorry for the mess)" width="400"/>
 
-UI sample  
+Web UI sample  
 <img src="design/UI-sample.png" alt="UI sample" width="300"/>
