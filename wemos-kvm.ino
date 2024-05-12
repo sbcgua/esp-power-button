@@ -9,19 +9,20 @@
 #include "htmls.h"
 #include "secrets.h" // WIFI_SSID, WIFI_PASS ...
 
-#define DEBUG
+// #define DEBUG
 
 #ifdef DEBUG
   #define LED_PIN LED_BUILTIN
   #define STATE_ON LOW // LOW for LED_BUILTIN
   #define STATE_OFF HIGH
-  #define TRACE(...) Serial.printf(__VA_ARGS__)
 #else
   #define LED_PIN D5
   #define STATE_ON HIGH
   #define STATE_OFF LOW
-  #define TRACE
+  // #define TRACE
 #endif
+
+#define TRACE(...) Serial.printf(__VA_ARGS__)
 
 static const char* HOSTNAME = "espkvm";
 ESP8266WebServer server(80);
@@ -51,7 +52,7 @@ void pushPower(int ms) {
 }
 
 void pushShort() { pushPower(300); }
-void pushLong() { pushPower(5000); }
+void pushLong() { pushPower(6000); }
 
 String getRootHtml() {
   String html = index_page;
